@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 
 const CategoryMealScreen = props => {
   return (
@@ -9,6 +9,9 @@ const CategoryMealScreen = props => {
           props.navigation.navigate({
               routeName: 'MealDetail'
           });
+      }} />
+      <Button title="Go Back" onPress={() => {
+          props.navigation.pop();
       }} />
     </View>
   );
