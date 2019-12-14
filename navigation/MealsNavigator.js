@@ -46,7 +46,8 @@ const tabScreenConfig = {
             color={tabInfo.tintColor}
           />
         );
-      }
+      },
+      tabBarColor: Colors.primaryColor
     }
   },
   Favorites:{
@@ -61,7 +62,8 @@ const tabScreenConfig = {
             color={tabInfo.tintColor}
           />
         );
-      }
+      },
+      tabBarColor: Colors.accentColor
     }
   } 
 }
@@ -83,6 +85,6 @@ const MealsFavTabNavigator = Platform.OS === 'android'
         activeTintColor: Colors.accentColor
       }
     }
-)
+  );
 
 export default createAppContainer(MealsFavTabNavigator);
